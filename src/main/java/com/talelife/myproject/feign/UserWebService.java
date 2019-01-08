@@ -17,15 +17,9 @@ import com.talelife.util.Result;
 @RequestMapping("/user")
 public interface UserWebService{
 	
-	@RequestMapping(value="/page")
-    Result<Page<UserDto>> page();
 
 	@RequestMapping("/get_user")
     Result<UserDto> getUser(@RequestParam("id") Long id);
 	
-	@RequestMapping("/add")
-    public Result<Object> add();
-	
-	@RequestMapping("/delete")
-    Result<Object> delete(Long id);
+
 }	
